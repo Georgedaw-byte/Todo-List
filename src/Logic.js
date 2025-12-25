@@ -1,4 +1,4 @@
-export let Projects = []
+export let Projects
 export let project1 = createProject("Project1")
 export let project2 = createProject("Project2")
 
@@ -13,7 +13,7 @@ if (localStorage.getItem("Projects") === null) {
     addProjectToProjects(project2)
 }
 
-// Problem is in this line
+
 else {
     Projects = JSON.parse(localStorage.getItem("Projects"))
 }
@@ -66,6 +66,3 @@ addTodoToProject(project1, Todo2)
 addTodoToProject(project2, Todo3)
 addTodoToProject(project2, Todo4)
 // localStorage.clear()
-
-console.log(JSON.parse(localStorage.getItem("Projects")))
-console.log(Projects)
