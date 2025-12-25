@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><img src="./images/ascii-art-text.png" width="400px" alt=""></header>
+    <div class="sidebar">
+        <h2>Projects</h2>
+        <span></span>
+        <ul></ul>
+        <button class="newproject">New Project</button>
+        <dialog>
+            <form method="dialog">
+                <label for="project_name">Project Name</label>
+                <input type="text" name="project_name" id="project_name" minlength="4">
+                <button class="addproject">Add</button>
+            </form>
+        </dialog>
+    </div>
+    <div class="content">
+    </div>
+        <dialog class="add">
+        <form method="dialog">
+                <label>Title</label>
+                <input type="text" name="title">
+                <label for="dis">Description</label>
+                <textarea name="description" id="dis"></textarea>
+                <span class="due-date">Date</span>
+                <input type="date" name="dueDate">
+                <label for="priority">Priority</label>
+                <select name="priority" id="priority">
+                    <option value="veryimportant">Very Important</option>
+                    <option value="important">Important</option>
+                    <option value="normal">Normal</option>
+                    <option value="notimportant">Not Important</option>
+                </select>
+                <label for="notes">Notes</label>
+                <textarea name="notes" id="notes" placeholder="Any notes 🫥"></textarea>
+                <button class="dialog-close">Close</button>
+                <button class="add-todo">add</button>
+            </form>
+        </dialog>
+        <button class="add-button">Add</button>
+    <footer>Made with Love  ❤️</footer>
+</body>
+</html>
